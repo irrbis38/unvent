@@ -140,6 +140,8 @@ body {
 
 .header {
   padding-top: calc(37 * var(--ratio));
+  /* position: relative;
+  z-index: 10; */
 }
 
 
@@ -291,20 +293,11 @@ body {
   transform: scale(0);
 }
 
-.burger__menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-}
-
 .burger__bg {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 10;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
@@ -322,7 +315,7 @@ body {
   left: 0;
   width: 70%;
   height: 100%;
-  z-index: 100;
+  z-index: 10;
   transform: translateX(-100%);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -790,10 +783,6 @@ body.lock {
   }
 
   /* ======== header__top styles ======== */
-
-  .burger__menu {
-    display: block;
-  }
 
   .header__top {
     height: 80px;
