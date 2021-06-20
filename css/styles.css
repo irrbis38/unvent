@@ -322,6 +322,7 @@ body {
   background-color: #eee;
   padding: 20px;
   transition: all .2s linear;
+  overflow: scroll;
 }
 
 .burger__link {
