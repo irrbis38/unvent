@@ -108,7 +108,6 @@ burgerBG.addEventListener('click', () => {
   burger.classList.remove('active');
   burgerNav.classList.remove('active');
   burgerBG.classList.remove('active');
-  burgerMenu.classList.remove('active');
   body.classList.remove('lock');
 });
 
