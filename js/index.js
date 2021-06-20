@@ -96,13 +96,11 @@ let slider = new Swiper('.slider__container', {
 let burger = document.querySelector('.header__burger');
 let burgerNav = document.querySelector('.burger__nav');
 let burgerBG = document.querySelector('.burger__bg');
-let burgerMenu = document.querySelector('.burger__menu');
 
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
   burgerNav.classList.toggle('active');
   burgerBG.classList.toggle('active');
-  burgerMenu.classList.toggle('active');
   body.classList.toggle('lock');
 });
 
