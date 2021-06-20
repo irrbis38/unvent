@@ -38,19 +38,19 @@ let sertBG = document.querySelector('.certificates__bg');
 let openFirst = () => {
   sertificate.classList.add('active');
   firstSertificate.classList.add('active');
-  body.classList.add('lock');
+  // body.classList.add('lock');
 };
 
 let openSecond = () => {
   sertificate.classList.add('active');
   secondSertificate.classList.add('active');
-  body.classList.add('lock');
+  // body.classList.add('lock');
 };
 
 let openThird = () => {
   sertificate.classList.add('active');
   thirdSertificate.classList.add('active');
-  body.classList.add('lock');
+  // body.classList.add('lock');
 };
 
 let closeAll = () => {
