@@ -30,6 +30,8 @@ let secondSertificateOpener = document.querySelector('.second__prev');
 let secondSertificate = document.querySelector('.second__sert');
 let thirdSertificateOpener = document.querySelector('.third__prev');
 let thirdSertificate = document.querySelector('.third__sert');
+let fourthSertificateOpener = document.querySelector('.fourth__prev');
+let fourthSertificate = document.querySelector('.fourth__sert');
 let sertificate = document.querySelector('.certificates');
 let allSert = document.querySelectorAll('.certificates__item');
 let sertCloser = document.querySelector('.certificates__close');
@@ -53,6 +55,12 @@ let openThird = () => {
   // body.classList.add('lock');
 };
 
+let openFourth = () => {
+  sertificate.classList.add('active');
+  fourthSertificate.classList.add('active');
+  // body.classList.add('lock');
+};
+
 let closeAll = () => {
   sertificate.classList.remove('active');
   allSert.forEach(element => {
@@ -64,6 +72,7 @@ let closeAll = () => {
 firstSertificateOpener.addEventListener('click', openFirst);
 secondSertificateOpener.addEventListener('click', openSecond);
 thirdSertificateOpener.addEventListener('click', openThird);
+fourthSertificateOpener.addEventListener('click', openFourth);
 sertCloser.addEventListener('click', closeAll);
 sertBG.addEventListener('click', closeAll);
 
@@ -72,22 +81,22 @@ sertBG.addEventListener('click', closeAll);
 
 let slider = new Swiper('.slider__container', {
 
-	loop: true,
-	slidesPerView: 2.5,
-	spaceBetween: 15,
-	grabCursor: true,
+  loop: false,
+  slidesPerView: 2.5,
+  spaceBetween: 15,
+  grabCursor: true,
 
-	// Navigation arrows
-	navigation: {
-		nextEl: '.intro__next',
-		prevEl: '.intro__prev',
-	},
-	breakpoints: {
-		768: {
-		slidesPerView: 3,
-		spaceBetween: 15
-		}
-	}
+  // Navigation arrows
+  navigation: {
+    nextEl: '.intro__next',
+    prevEl: '.intro__prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 15
+    }
+  }
 });
 
 
