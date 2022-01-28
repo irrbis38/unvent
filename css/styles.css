@@ -276,6 +276,42 @@ body {
   font-weight: 800;
 }
 
+.header__lang {
+  text-align: center;
+}
+
+.header__lang p {
+  margin-bottom: 0.41667vw;
+}
+
+.header__langSelector {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.header__langSelector li {
+  margin: 0 0.3125vw;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header__langSelector li.active {
+  font-weight: 700;
+  color: #fe5851;
+}
+
+.header__langSelector li:hover {
+  color: #fe5851;
+}
+
 .header__consultation {
   position: relative;
   overflow: hidden;
@@ -561,7 +597,7 @@ body {
 
 /* ======== intro styles ======== */
 .intro__heading {
-  width: 43.75vw;
+  width: 46.875vw;
   margin-bottom: 3.69792vw;
   font-size: 3.125vw;
   font-weight: 300;
@@ -646,18 +682,18 @@ body {
 }
 
 .intro__calc {
-  width: 22.39583vw;
+  width: 22.91667vw;
   margin-right: 5.46875vw;
 }
 
 .intro__calcDescription {
   margin-bottom: 1.5625vw;
-  padding: 0 1.14583vw;
+  padding: 0 0.78125vw;
   line-height: 1.5;
 }
 
 .intro__calcDescription span {
-  width: 9.89583vw;
+  width: 10.67708vw;
   height: 1.5625vw;
   display: inline-block;
   padding: 0 0.41667vw;
@@ -996,6 +1032,16 @@ body.lock {
   .header__adress {
     font-size: 14px;
   }
+  .header__lang {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+  .header__lang p {
+    margin-bottom: 8px;
+  }
+  .header__langSelector li {
+    margin: 0 6px;
+  }
   .header__consultation {
     width: 230px;
     height: 55px;
@@ -1177,6 +1223,9 @@ body.lock {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .header__lang {
+    display: none;
   }
   .header__contacts {
     position: absolute;

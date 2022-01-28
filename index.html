@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unvent - Профессиональный монтаж дымоходов любой сложности на территории Киева и Киевской области</title>
+    <title id="title">Unvent - Профессиональный монтаж дымоходов любой сложности на территории Киева и Киевской области</title>
     <link rel="icon" href="./img/Favicon.png" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -25,7 +25,7 @@
                         <a href="./index.html"></a>
                     </div>
 
-                    <div class="header__about">
+                    <div class="header__about" id="header__about">
                         <span>Профессиональный монтаж дымоходов</span> любой сложности на территории Киева и Киевской
                         обл.
                     </div>
@@ -36,13 +36,21 @@
                             <img src="./img/map.jpg" alt="посмотреть на карте">
                         </div>
 
-                        <div class="header__adress">
+                        <div class="header__adress" id="header__adress">
                             <span>Украина, Киев,</span> Васильковская 30
                         </div>
 
                     </div>
 
-                    <button class="header__consultation">Консультация инженера</button>
+                    <div class="header__lang">
+                        <p id="lang__title">Выбор языка</p>
+                        <ul class="header__langSelector">
+                            <li class="active header__langItem" data-lang="ru">RU</li>
+                            <li class="header__langItem" data-lang="ua">UA</li>
+                        </ul>
+                    </div>
+
+                    <button class="header__consultation" id="header__consultation">Консультация инженера</button>
 
                     <div class="header__burger">
                         <span></span>
@@ -57,15 +65,15 @@
                         <div class="header__social">
                             <div class="header__item">
                                 <img src="./img/icon-viber.png" alt="viber">
-                                <a href="viber://chat?number=%2B380672425878"></a>
+                                <a href="viber://chat?number=%2B380672425878"  target="_blank"></a>
                             </div>
                             <div class="header__item">
                                 <img src="./img/icon-telegram.png" alt="telegram">
-                                <a href="https://telegram.me/nick_name"></a>
+                                <a href="https://telegram.me/nick_name" target="_blank"></a>
                             </div>
                             <div class="header__item">
                                 <img src="./img/icon-whatsapp.png" alt="whatsapp">
-                                <a href="https://wa.me/380672425878"></a>
+                                <a href="https://wa.me/380672425878"  target="_blank"></a>
                             </div>
                         </div>
                     </div>
@@ -74,23 +82,23 @@
 
                 <nav class="header__nav">
 
-                    <a href="" class="header__link">Калькулятор</a>
+                    <a href="" class="header__link" id="link__calc">Калькулятор</a>
 
-                    <a href="" class="header__link">Услуги</a>
+                    <a href="" class="header__link" id="link__serv">Услуги</a>
 
-                    <a href="" class="header__link">наши новости</a>
+                    <a href="" class="header__link" id="link__news">наши новости</a>
 
-                    <a href="" class="header__link">Отзывы</a>
+                    <a href="" class="header__link" id="link__rev">Отзывы</a>
 
-                    <a href="" class="header__link">Консультация</a>
+                    <a href="" class="header__link" id="link__cons">Консультация</a>
 
-                    <a href="" class="header__link">преимущества</a>
+                    <a href="" class="header__link" id="link__adv">преимущества</a>
 
-                    <a href="" class="header__link">производство</a>
+                    <a href="" class="header__link" id="link__factory">производство</a>
 
-                    <a href="" class="header__link">вопрос-ответ</a>
+                    <a href="" class="header__link" id="link__qa">вопрос-ответ</a>
 
-                    <a href="" class="header__link">контакты</a>
+                    <a href="" class="header__link" id="link__contacts">контакты</a>
 
                 </nav><!-- /.header__menu -->
 
@@ -100,23 +108,23 @@
             <div class="burger__bg"></div>
             <nav class="burger__nav">
 
-                <a href="" class="burger__link">Калькулятор</a>
+                <a href="" class="burger__link" id="link__calc__bg">Калькулятор</a>
 
-                <a href="" class="burger__link">Услуги</a>
+                <a href="" class="burger__link" id="link__serv__bg">Услуги</a>
 
-                <a href="" class="burger__link">наши новости</a>
+                <a href="" class="burger__link" id="link__news__bg">наши новости</a>
 
-                <a href="" class="burger__link">Отзывы</a>
+                <a href="" class="burger__link" id="link__rev__bg">Отзывы</a>
 
-                <a href="" class="burger__link">Консультация</a>
+                <a href="" class="burger__link" id="link__cons__bg">Консультация</a>
 
-                <a href="" class="burger__link">преимущества</a>
+                <a href="" class="burger__link" id="link__adv__bg">преимущества</a>
 
-                <a href="" class="burger__link">производство</a>
+                <a href="" class="burger__link" id="link__factory__bg">производство</a>
 
-                <a href="" class="burger__link">вопрос-ответ</a>
+                <a href="" class="burger__link" id="link__qa__bg">вопрос-ответ</a>
 
-                <a href="" class="burger__link">контакты</a>
+                <a href="" class="burger__link" id="link__contacts__bg">контакты</a>
 
             </nav><!-- /.header__menu -->
 
@@ -124,7 +132,7 @@
             <div class="intro">
 
                 <div class="intro__title">
-                    <h1 class="intro__heading"><span>Монтаж дымоходов из нержавеющей стали</span> для частных домов и
+                    <h1 class="intro__heading" id="intro__heading"><span>Монтаж дымоходов из нержавеющей стали</span> для частных домов и
                         предприятий</h1>
                 </div>
 
@@ -132,16 +140,15 @@
 
                     <div class="intro__advantageItem">
                         <p class="intro__years">15</p>
-                        <p class="intro__text"><span>лет устанавливаем
-                                дымоходы</span> для частных лиц и организаций</p>
+                        <p class="intro__text" id="intro__text1"><span>лет устанавливаем дымоходы</span> для частных лиц и организаций</p>
                     </div>
 
                     <div class="intro__advantageItem">
-                        <p class="intro__text"><span>Бесплатный выезд инженера</span> в пределах 30 км. от Киева</p>
+                        <p class="intro__text" id="intro__text2"><span>Бесплатный выезд инженера</span> в пределах 30 км. от Киева</p>
                     </div>
 
                     <div class="intro__advantageItem">
-                        <p class="intro__text"><span>Монтаж под ключ от 1 дня,</span> в наличии все разрешительные
+                        <p class="intro__text"  id="intro__text3"><span>Монтаж под ключ от 1 дня,</span> в наличии все разрешительные
                             документы</p>
                     </div>
 
@@ -150,17 +157,17 @@
                 <div class="intro__info">
 
                     <div class="intro__calc">
-                        <div class="intro__calcDescription">
+                        <div class="intro__calcDescription" id="intro__calcDescription">
                             Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и <span>получите скидку 15%</span>
                         </div>
                         <button class="intro__calcBtn">
                             <img src="./img/calc.png" alt="рассчитать стоимость">
-                            <div>Рассчитать стоимость монтажа и получить скидку</div>
+                            <div id="intro__calcText">Рассчитать стоимость монтажа и получить скидку</div>
                         </button>
                     </div>
 
                     <div class="intro__certificates">
-                        <div class="intro__certTitle">Лицензии и сертификаты в наличии</div>
+                        <div class="intro__certTitle" id="intro__certTitle">Лицензии и сертификаты в наличии</div>
                         <div class="intro__slider">
 
                             <div class="slider__container swiper-container">

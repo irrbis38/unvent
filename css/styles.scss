@@ -248,6 +248,37 @@ body {
   }
 }
 
+.header__lang {
+  text-align: center;
+
+  & p {
+    margin-bottom: vw(8);
+  }
+}
+
+.header__langSelector {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+
+  & li {
+    margin: 0 vw(6);
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &.active {
+      font-weight: 700;
+      color: #fe5851;
+    }
+
+    &:hover {
+      color: #fe5851;
+    }
+  }
+}
+
 .header__consultation {
   position: relative;
   overflow: hidden;
@@ -498,7 +529,7 @@ body {
 /* ======== intro styles ======== */
 
 .intro__heading {
-  width: vw(840);
+  width: vw(900);
   margin-bottom: vw(71);
   font-size: vw(60);
   font-weight: 300;
@@ -566,18 +597,18 @@ body {
 }
 
 .intro__calc {
-  width: vw(430);
+  width: vw(440);
   margin-right: vw(105);
 }
 
 .intro__calcDescription {
   margin-bottom: vw(30);
-  padding: 0 vw(22);
+  padding: 0 vw(15);
   line-height: 1.5;
 }
 
 .intro__calcDescription span {
-  width: vw(190);
+  width: vw(205);
   height: vw(30);
   display: inline-block;
   padding: 0 vw(8);
@@ -905,6 +936,21 @@ body.lock {
     font-size: 14px;
   }
 
+  .header__lang {
+    font-size: 14px;
+    margin-right: 15px;
+
+    & p {
+      margin-bottom: 8px;
+    }
+  }
+
+  .header__langSelector {
+    & li {
+      margin: 0 6px;
+    }
+  }
+
   .header__consultation {
     width: 230px;
     height: 55px;
@@ -1112,6 +1158,10 @@ body.lock {
 
   .header__top {
     justify-content: flex-start;
+  }
+
+  .header__lang {
+    display: none;
   }
 
   .header__contacts {
