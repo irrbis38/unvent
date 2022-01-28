@@ -101,12 +101,12 @@
 /* ======== animation ======== */
 @-webkit-keyframes highlight {
   0% {
-    -webkit-transform: skewX(-45deg) translateX(-60px);
-            transform: skewX(-45deg) translateX(-60px);
+    -webkit-transform: skewX(-45deg) translateX(-80px);
+            transform: skewX(-45deg) translateX(-80px);
   }
   20% {
-    -webkit-transform: skewX(-45deg) translateX(400px);
-            transform: skewX(-45deg) translateX(400px);
+    -webkit-transform: skewX(-45deg) translateX(500px);
+            transform: skewX(-45deg) translateX(500px);
   }
   21% {
     -webkit-transform: scale(0);
@@ -115,12 +115,12 @@
 }
 @keyframes highlight {
   0% {
-    -webkit-transform: skewX(-45deg) translateX(-60px);
-            transform: skewX(-45deg) translateX(-60px);
+    -webkit-transform: skewX(-45deg) translateX(-80px);
+            transform: skewX(-45deg) translateX(-80px);
   }
   20% {
-    -webkit-transform: skewX(-45deg) translateX(400px);
-            transform: skewX(-45deg) translateX(400px);
+    -webkit-transform: skewX(-45deg) translateX(500px);
+            transform: skewX(-45deg) translateX(500px);
   }
   21% {
     -webkit-transform: scale(0);
@@ -301,10 +301,10 @@ body {
   width: 25px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transform: skewX(-45deg) translateX(-60px);
-          transform: skewX(-45deg) translateX(-60px);
-  -webkit-animation: highlight 4s 2s ease-in-out infinite;
-          animation: highlight 4s 2s ease-in-out infinite;
+  -webkit-transform: skewX(-45deg) translateX(-80px);
+          transform: skewX(-45deg) translateX(-80px);
+  -webkit-animation: highlight 5s 2s ease-in-out infinite;
+          animation: highlight 5s 2s ease-in-out infinite;
 }
 
 .header__consultation:hover {
@@ -699,10 +699,10 @@ body {
   width: 25px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transform: skewX(-45deg) translateX(-60px);
-          transform: skewX(-45deg) translateX(-60px);
-  -webkit-animation: highlight 4s 2s ease-in-out infinite;
-          animation: highlight 4s 2s ease-in-out infinite;
+  -webkit-transform: skewX(-45deg) translateX(-80px);
+          transform: skewX(-45deg) translateX(-80px);
+  -webkit-animation: highlight 5s 2s ease-in-out infinite;
+          animation: highlight 5s 2s ease-in-out infinite;
 }
 
 .intro__calcBtn:hover {

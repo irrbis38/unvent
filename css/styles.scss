@@ -108,10 +108,10 @@
 
 @keyframes highlight {
   0% {
-    transform: skewX(-45deg) translateX(-60px);
+    transform: skewX(-45deg) translateX(-80px);
   }
   20% {
-    transform: skewX(-45deg) translateX(400px);
+    transform: skewX(-45deg) translateX(500px);
   }
   21% {
     transform: scale(0);
@@ -194,19 +194,19 @@ body {
     left: 0;
     z-index: 100;
   }
-}
 
-.header__logo img {
-  width: 100%;
-  height: auto;
+  & img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .header__about {
   width: vw(295);
-}
 
-.header__about span {
-  font-weight: 800;
+  & span {
+    font-weight: 800;
+  }
 }
 
 .header__location {
@@ -231,21 +231,21 @@ body {
   justify-content: center;
   margin-right: vw(20);
   border-radius: 50%;
-}
 
-.header__map img {
-  width: 100%;
-  height: auto;
-  border: vw(1) solid #dcdcdc;
-  border-radius: 50%;
+  & img {
+    width: 100%;
+    height: auto;
+    border: vw(1) solid #dcdcdc;
+    border-radius: 50%;
+  }
 }
 
 .header__adress {
   font-size: vw(16);
-}
 
-.header__adress span {
-  font-weight: 800;
+  & span {
+    font-weight: 800;
+  }
 }
 
 .header__consultation {
@@ -271,8 +271,8 @@ body {
     width: 25px;
     height: 100%;
     background-color: rgba($color: #fff, $alpha: 0.9);
-    transform: skewX(-45deg) translateX(-60px);
-    animation: highlight 4s 2s ease-in-out infinite;
+    transform: skewX(-45deg) translateX(-80px);
+    animation: highlight 5s 2s ease-in-out infinite;
   }
 }
 
@@ -610,8 +610,8 @@ body {
     width: 25px;
     height: 100%;
     background-color: rgba($color: #fff, $alpha: 0.9);
-    transform: skewX(-45deg) translateX(-60px);
-    animation: highlight 4s 2s ease-in-out infinite;
+    transform: skewX(-45deg) translateX(-80px);
+    animation: highlight 5s 2s ease-in-out infinite;
   }
 }
 
