@@ -181,3 +181,50 @@ const lang = {
     intro__certTitle: 'Ліцензії та сертифікати в наявності',
   }
 };
+
+// popup
+
+const popup = document.querySelector('.popup');
+const popupCloser = document.querySelector('.popup__close');
+const popupBG = document.querySelector('.popup__bg');
+const consultationBtn = document.querySelector('.header__consultation');
+const allPopupItems = document.querySelectorAll('.popup__item');
+const popupNubmer = document.querySelector('.popup__nubmer');
+const popupMsg = {
+  phone: 'Ваш номер телефона',
+  viber: 'Ваш номер в Viber',
+  whatsapp: 'Ваш номер в WhatsApp',
+  telegram: 'Ваш номер в Telegram',
+};
+
+consultationBtn.addEventListener('click', () => {
+  popup.classList.add('active');
+  body.classList.add("lock");
+});
+
+popupCloser.addEventListener('click', () => {
+  popup.classList.remove('active');
+  body.classList.remove("lock");
+});
+
+popupBG.addEventListener('click', () => {
+  popup.classList.remove('active');
+  body.classList.remove("lock");
+});
+
+allPopupItems.forEach(el => {
+  el.addEventListener('click', (e) => {
+    if(!e.target.closest('.popup__item').classList.contains('active')){
+      allPopupItems.forEach(item => item.classList.remove('active'));
+      e.target.closest('.popup__item').classList.add('active');
+      let contact = e.target.closest('.popup__item').dataset.contact
+      popupNubmer.placeholder = popupMsg[contact];
+    }
+  });
+});
+
+const submitBtn = document.querySelector('.popup__submit');
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+});
